@@ -1,0 +1,28 @@
+<head>
+  <%= javascript_include_tag "portfolio" %>
+</head>
+
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag 'assets/stylesheets/portfolio' %>
+<% end %>
+
+
+
+<div id="first_background"><%= image_tag("framing_first_pic.jpg", :alt => "Oops! This picture won't load...") %></div>
+
+<div class="wrapper">
+	<div class="navbar">
+		<ul class="nav">
+			<li><%= link_to 'Contact Me', contact_emma_path, :class => "link" %></li>
+			<li><%= link_to 'Resume', resume_path, :class => "link" %></li>
+		</ul>
+	</div>
+
+    <div class="push"></div>
+</div>
+<div class="footer">
+	
+	<h1>Fresh perspectives spur creation...</h1>
+	</br>
+	<h2>&nbsp;&nbsp;&nbsp;especially when combined with the passion and skills of a full stack engineer.</h2>
+</div>
