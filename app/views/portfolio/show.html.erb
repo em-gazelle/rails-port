@@ -6,8 +6,12 @@
 	<%= image_tag("emma-profile.jpg", :alt => "Oops! This picture won't load...") %>
 </div>
 
+<!-- Hello! I'm Emma Flock, a Full Stack Ruby on Rails Engineer. -->
+
 <div id="right_content">
-	<h1 class="greeting">Hello! I'm Emma Flock, a Full Stack Ruby on Rails Engineer.</h1>
+
+	<% @greetingT = "Hello! I'm Emma Flock, a Full Stack Ruby on Rails Engineer." %>
+	</br><h1><%= link_to @greetingT, :root, :class => "greeting" %></h1></br></br>
 	<h3> Would you like to create, update, customize or add complex functionality to your website? 
 	</br>	
 	I can help, and am currently available for hire.</h3>
